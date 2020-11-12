@@ -56,7 +56,7 @@ def checkout(cart, coupons)
     total += each_item[:price] * each_item[:count]
   end  
     if total > 100.0
-      return (total*0.9).signif(2)
+      return (total*0.9).floor(2)
     end
-    (total).signif(2) 
+    (total).floor(2) 
 end
